@@ -6,7 +6,7 @@ const app = express();
 
 app.use(cors()); 
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // IMPORTANT: Replace the ID below with the one from SheetDB.io
 const SHEETDB_URL = 'https://sheetdb.io/api/v1/9ctsom14yft3h'; 

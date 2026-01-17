@@ -1,0 +1,50 @@
+:root {
+    --bg: #F8F9FB;
+    --text: #111827;
+    --card: #FFFFFF;
+    --border: #E5E7EB;
+    --input: #F9FAFB;
+}
+
+body.dark {
+    --bg: #0F172A;
+    --text: #F8FAFC;
+    --card: #1E293B;
+    --border: #334155;
+    --input: #0F172A;
+}
+
+.bg-var-bg { background-color: var(--bg); }
+.text-var-text { color: var(--text); }
+.bg-var-card { background-color: var(--card); }
+.border-var-border { border-color: var(--border); }
+
+/* Standard Heading Styles */
+.heading-detail {
+    font-size: 14px;
+    font-weight: 700;
+    color: #005CE6;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+}
+
+.label-text {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #9CA3AF;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--input);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+    color: var(--text);
+}
